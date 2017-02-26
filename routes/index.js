@@ -45,9 +45,11 @@ router.get('/respond', (req, res, next) => {
     return;
   }
 
-  // TODO: move this into ENV
   const twitter = new Twitter({
-    // config via `now secret`
+    consumer_key: process.env.TT_TWITTER_CONSUMER_KEY,
+    consumer_secret: process.env.TT_TWITTER_CONSUMER_SECRET,
+    access_token_key: process.env.TT_TWITTER_ACCESS_KEY,
+    access_token_secret: process.env.TT_TWITTER_ACCESS_SECRET
   });
 
   const statusId = tweetUrl.match(/\w+$/)[0];
