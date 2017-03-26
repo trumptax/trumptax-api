@@ -15,7 +15,7 @@
     "nightmare": "^2.10.0",
     "now-logs": "0.0.7",
     "serve-favicon": "~2.3.2",
-    "trumptax-calculator": "^1.0.3",
+    "trumptax-calculator": "^1.2.0",
     "twitter": "^1.7.0"
   }
 }
